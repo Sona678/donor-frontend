@@ -19,13 +19,18 @@ const donationOfferService = {
     },
 
     searchDonor: async (data) => {
-        const response = await api.get(`${DONATION_URL}/search`,{
+        const response = await api.get('DONATION_URL/search',{
             params:data});
         return response.data;
     },
 
+    getPendingOffer:async()=>{
+        const response=await api.get('DONATION_URL/pending')
+        return response.data
+    },
+
     getMyOffers: async () => {
-        const response = await api.get(`${DONATION_URL}/me`);
+        const response = await api.get('DONATION_URL/me');
         return response.data;
     },
 

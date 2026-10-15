@@ -2,17 +2,19 @@
 import { Link } from "react-router-dom";
 
 const PostCard = ({
-  $id,
+  request,
   type,
-  image,
-  bloodGroup,
-  district,
-  isAvailable
+ 
 }) => {
+
+  const {_id, image,bloodGroup,district,isAvailable}=request
+  
   const link =
     type === "donor"
-      ? `/donors/${$id}`
-      : `/blood-requests/${$id}`;
+      ? `/donors/${_id}`
+      : `/blood-requests/${_id}`;
+
+
 
   return (
     <Link to={link}>

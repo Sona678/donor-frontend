@@ -19,12 +19,12 @@ const bloodRequestService = {
     },
 
     getPendingRequest: async () => {
-        const response = await api.get(`${REQUEST_URL}/pending`);
+        const response = await api.get('REQUEST_URL/pending');
         return response.data;
     },
 
     getMyRequests: async () => {
-        const response = await api.get(`${REQUEST_URL}/me`);
+        const response = await api.get('REQUEST_URL/me');
         return response.data;
     },
 
