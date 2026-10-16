@@ -8,6 +8,7 @@ import Button from "../components/Button.jsx"
 import Signup from "../components/Signup.jsx"
 import Login  from "../components/Login.jsx"
 import PostCard from "../components/PostCard.jsx"
+import AuthLayout from "../components/AuthLayout.jsx"
 
 
-export  {Header,Footer,Logo,Container,LogoutBtn,Input,Button,Signup,Login,PostCard}
+export  {Header,Footer,Logo,Container,LogoutBtn,Input,Button,Signup,Login,PostCard,AuthLayout}

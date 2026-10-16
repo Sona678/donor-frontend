@@ -1,5 +1,5 @@
 
-import {Signup as SignupComponent} from '../Signup'
+import {Signup as SignupComponent} from '../components/Signup'
 
 const Signup= () => {
   return (

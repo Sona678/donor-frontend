@@ -1,25 +1,15 @@
-
-import api from "./api/axios.js"
-import {Signup} from "./components/Signup.jsx"
-
-import './App.css'
+import { Outlet } from "react-router-dom";
+import Header from "./components/Header/Header.jsx"
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
-const getBloodRequests=async()=>{
-  try{
-    const response=await api.get("/bloodReq/request/me");
-    console.log(response.data)
-  }
-catch(error){
-  console.log("error:",error)
-}
-}
-
   return (
     <>
-    <Signup/>
+      <Header />
+      <Outlet />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
